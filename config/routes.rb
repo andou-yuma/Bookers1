@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  root 'homes#top'
   resources :books
   # get 'books/new'
-   root 'homes#top'
-
+ 
   # post 'books' => 'books#create'
 
 
@@ -11,5 +11,6 @@ Rails.application.routes.draw do
 
 
   # get 'book/:id' => 'books#show'
+  # patch 'books/:id' => 'books#update',as:'update_book'
 
 end
